@@ -1,6 +1,5 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit"
 import { combineSlices, configureStore } from "@reduxjs/toolkit"
-import { setupListeners } from "@reduxjs/toolkit/query"
 
 // `combineSlices` automatically combines the reducers using
 // their `reducerPath`s, therefore we no longer need to call `combineReducers`.
@@ -15,9 +14,7 @@ export const makeStore = (preloadedState?: Partial<RootState>) => {
     reducer: rootReducer,
     preloadedState,
   })
-  // configure listeners using the provided defaults
-  // optional, but required for `refetchOnFocus`/`refetchOnReconnect` behaviors
-  setupListeners(store.dispatch)
+
   return store
 }
 
