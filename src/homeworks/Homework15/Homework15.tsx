@@ -50,9 +50,6 @@ function Homework15() {
         count={value}
         onPlus={onPlus}
         onMinus={onMinus}
-        value={formik.values.vegiCount}
-        onChange={formik.handleChange}
-        name="vegiCount"
       />
       <Button name="Send" type="submit" />
     </VegiCountFormWrapper>
