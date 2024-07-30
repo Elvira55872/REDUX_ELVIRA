@@ -4,7 +4,8 @@ import Homework16 from "homeworks/Homework16/Homework16"
 function App() {
   return <>
   {/* <Homework15/> */}
-  <Homework16/>
+    {/* <Homework16/> */}
+    {/* <Homework18/> */}
   </>
 }
 
